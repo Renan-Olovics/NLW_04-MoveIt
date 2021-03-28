@@ -1,3 +1,2 @@
-Ideias para mudar no final do projeto
-
-Criar um botão de PAUSE para somente depois resetar.
+para abrir o projeto, abra o projeto no vscode e instale o next com o comando 
+yarn add next react react-dom
