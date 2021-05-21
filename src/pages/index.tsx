@@ -8,7 +8,7 @@ import { Profile } from "../components/Profile";
 import { ChallengeBox } from "../components/ChallengeBox";
 import { HomeBar } from "../components/HomeBar";
 
-import styles from "../styles/components/Home.module.css";
+import styles from "../styles/components/Home.module.scss";
 import { CountdownProvider } from "../Contexts/CountdownContext";
 import { ChallengesProvider } from "../Contexts/ChallengesContext";
 

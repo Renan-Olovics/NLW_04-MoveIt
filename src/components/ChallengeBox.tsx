@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { challegesContext } from "../Contexts/ChallengesContext";
 import { CountdownContext } from "../Contexts/CountdownContext";
 
-import styles from "../styles/components/ChallengeBox.module.css";
+import styles from "../styles/components/ChallengeBox.module.scss";
 
 export function ChallengeBox() {
 	const { activeChallenge, resetChallenge, completeChallenge } = useContext(
