@@ -1,7 +1,15 @@
-import "../styles/global.scss";
+import '../styles/global.scss'
+import styles from '../styles/app.module.scss'
 
-function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />;
+import NavBar from '../components/NavBar'
+
+function MyApp({ Component, pageProps }): JSX.Element {
+  return (
+    <div className={styles.HomePage}>
+      <NavBar />
+      <Component {...pageProps} />
+    </div>
+  )
 }
 
-export default MyApp;
+export default MyApp
