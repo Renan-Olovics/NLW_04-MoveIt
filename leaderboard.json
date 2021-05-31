@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": "8951512",
+      "git": "diego3g",
+      "name": "Diego Fernandes",
+      "level": "43",
+      "challenges": "127",
+      "experience": "154000"
+    },
+    {
+      "id": "1467853",
+      "git": "anajuliabit",
+      "name": "Ana Julia Bittencourt",
+      "level": "37",
+      "challenges": "98",
+      "experience": "117000"
+    },
+    {
+      "id": "5159816",
+      "git": "bprofiro",
+      "name": "Brenda Profiro",
+      "level": "37",
+      "challenges": "97",
+      "experience": "98000"
+    },
+    {
+      "id": "6518743",
+      "git": "BrunoS3D",
+      "name": "Bruno Silva",
+      "level": "37",
+      "challenges": "84",
+      "experience": "77400"
+    },
+    {
+      "id": "5612548",
+      "git": "cleitonsouza",
+      "name": "Cleiton Souza",
+      "level": "37",
+      "challenges": "65",
+      "experience": "52000"
+    },
+    {
+      "id": "6295117",
+      "git": "fhugoduarte",
+      "name": "Hugo Duarte",
+      "level": "37",
+      "challenges": "25",
+      "experience": "26000"
+    },
+    {
+      "id": "6239512",
+      "git": "Renan-Olovics",
+      "name": "Renan Olovics",
+      "level": "41",
+      "challenges": "123",
+      "experience": "150000"
+    },
+    {
+      "id": "3691575",
+      "git": "jpdemagalhaes",
+      "name": "João Paulo de Magalhães",
+      "level": "43",
+      "challenges": "127",
+      "experience": "154000"
+    },
+    {
+      "id": "3549256",
+      "git": "luizbatanero",
+      "name": "Luiz Batanero",
+      "level": "43",
+      "challenges": "127",
+      "experience": "154000"
+    },
+    {
+      "id": "1465421",
+      "git": "micaellimedeiros",
+      "name": "Micaelli Medeiros",
+      "level": "43",
+      "challenges": "127",
+      "experience": "154000"
+    }
+  ]
+}

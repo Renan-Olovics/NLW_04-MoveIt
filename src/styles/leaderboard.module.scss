@@ -1,0 +1,81 @@
+.leaderboardPage {
+  display: flex;
+  background-color: var(--background);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20rem 0 20rem;
+
+  h1 {
+    padding: 3rem;
+  }
+
+  thead {
+    th {
+      text-transform: uppercase;
+      color: #666666;
+      padding-bottom: 1rem;
+    }
+    th:last-child {
+      section {
+        display: flex;
+        justify-content: space-between;
+        p {
+          padding: 0 5rem 0 5rem;
+        }
+      }
+    }
+  }
+
+  tbody {
+    th {
+      align-items: center;
+      height: 7rem;
+    }
+
+    th:last-child {
+      width: 100%;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+    tr {
+      background: orange;
+    }
+  }
+  .blueText {
+    color: var(--blue);
+  }
+}
+
+.userInfo {
+  display: flex;
+  margin-left: 1rem;
+  background: green;
+
+  div {
+    display: flex;
+
+    section:first-child {
+      display: flex;
+      flex-direction: column;
+      background: yellow;
+      align-self: flex-start;
+    }
+    section:last-child {
+      display: flex;
+      background: blue;
+      align-self: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.batata {
+  display: flex;
+}

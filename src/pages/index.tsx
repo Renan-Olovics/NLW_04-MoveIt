@@ -10,6 +10,7 @@ import { ChallengeBox } from '../components/ChallengeBox'
 import styles from '../styles/components/Home.module.scss'
 import { CountdownProvider } from '../Contexts/CountdownContext'
 import { ChallengesProvider } from '../Contexts/ChallengesContext'
+import SideBar from '../components/SideBar/Index'
 
 interface HomeProps {
   level: number
@@ -18,33 +19,35 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps): JSX.Element {
-  console.log(props)
   return (
-    <ChallengesProvider
-      level={props.level}
-      currentExperience={props.currentExperience}
-      challengesCompleted={props.challengesCompleted}
-    >
-      <div className={styles.container}>
-        <Head>
-          <title>Início | Move.It</title>
-        </Head>
+    <div className={styles.indexPage}>
+      <ChallengesProvider
+        level={props.level}
+        currentExperience={props.currentExperience}
+        challengesCompleted={props.challengesCompleted}
+      >
+        <SideBar />
+        <div className={styles.container}>
+          <Head>
+            <title>Início | Move.It</title>
+          </Head>
 
-        <ExperienceBar />
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChalleges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
-      </div>
-    </ChallengesProvider>
+          <ExperienceBar />
+          <CountdownProvider>
+            <section>
+              <div>
+                <Profile />
+                <CompletedChalleges />
+                <Countdown />
+              </div>
+              <div>
+                <ChallengeBox />
+              </div>
+            </section>
+          </CountdownProvider>
+        </div>
+      </ChallengesProvider>
+    </div>
   )
 }
 
