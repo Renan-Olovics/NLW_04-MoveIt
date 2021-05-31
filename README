@@ -1,2 +1,8 @@
-para abrir o projeto, abra o projeto no vscode e instale o next com o comando 
-yarn add next react react-dom
+to run this project you should 
+
+yarn
+
+then
+
+yarn server
+yarn dev
