@@ -32,21 +32,36 @@
   }
 
   tbody {
-    th {
+    td {
       align-items: center;
       height: 7rem;
     }
+    td:first-child {
+      border-radius: 10px 0 0 10px;
+      width: 60px;
+      h3 {
+        display: flex;
+        justify-content: center;
+      }
+    }
 
-    th:last-child {
+    td:last-child {
       width: 100%;
+      border-radius: 0 10px 10px 0;
+
+      background: var(--white);
     }
 
     img {
       border-radius: 50%;
     }
     tr {
-      background: orange;
+      background: var(--white);
+      border-radius: 0 10% 10% 0;
     }
+  }
+  div {
+    height: 0.2rem;
   }
   .blueText {
     color: var(--blue);
@@ -56,26 +71,37 @@
 .userInfo {
   display: flex;
   margin-left: 1rem;
-  background: green;
 
-  div {
+  section {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 
-    section:first-child {
+    div:first-child {
+      padding-left: 1rem;
       display: flex;
       flex-direction: column;
-      background: yellow;
       align-self: flex-start;
+      height: 100%;
+
+      h3 {
+        font-size: 1.25rem;
+        color: var(--title);
+      }
     }
-    section:last-child {
+    div:last-child {
       display: flex;
-      background: blue;
       align-self: center;
       justify-content: space-between;
+      margin: 0 3rem 0 0;
+
+      p:nth-child(2) {
+        padding: 0 3rem 0 0.5rem;
+      }
+      p:last-child {
+        padding-left: 0.5rem;
+      }
     }
   }
-}
-
-.batata {
-  display: flex;
 }

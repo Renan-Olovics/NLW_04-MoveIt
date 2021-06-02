@@ -12,7 +12,7 @@ interface usersProps {
   experience: number
 }
 interface leaderboardProps {
-  leaderboardList: Array<usersProps>
+  leaderboardList: usersProps[]
 }
 
 export default function Leaderboard(props: leaderboardProps) {
@@ -37,39 +37,42 @@ export default function Leaderboard(props: leaderboardProps) {
             </tr>
           </thead>
           <tbody>
-            {props.leaderboardList.map((data) => {
+            {props.leaderboardList.map((data, index) => {
               return (
-                <tr key={data.id}>
-                  <th>
-                    <h3>1</h3>
-                  </th>
+                <>
+                  <tr key={data.id}>
+                    <td>
+                      <h3>{index + 1}</h3>
+                    </td>
 
-                  <th className={styles.userInfo}>
-                    <img
-                      src={`http://www.github.com/${data.git}.png`}
-                      alt={data.name}
-                      width={64}
-                      height={64}
-                    />
-
-                    <div className={styles.batata}>
-                      <section>
-                        <h3>{data.name}</h3>
-                        <p>
-                          <img src="/icons/level.svg" alt="levelIcon" />
-                          {` Level ${data.level}`}
-                        </p>
-                      </section>
+                    <td className={styles.userInfo}>
+                      <img
+                        src={`http://www.github.com/${data.git}.png`}
+                        alt={data.name}
+                        width={64}
+                        height={64}
+                      />
 
                       <section>
-                        <p>{data.challenges}</p>
-                        <p className={styles.blueText}>completados</p>
-                        <p>{data.experience}</p>
-                        <p className={styles.blueText}>xp</p>
+                        <div>
+                          <h3>{data.name}</h3>
+                          <p>
+                            <img src="/icons/level.svg" alt="levelIcon" />
+                            {` Level ${data.level}`}
+                          </p>
+                        </div>
+
+                        <div>
+                          <p className={styles.blueText}>{data.challenges}</p>
+                          <p>completados</p>
+                          <p className={styles.blueText}>{data.experience}</p>
+                          <p>xp</p>
+                        </div>
                       </section>
-                    </div>
-                  </th>
-                </tr>
+                    </td>
+                  </tr>
+                  <div />
+                </>
               )
             })}
           </tbody>
@@ -82,7 +85,7 @@ export default function Leaderboard(props: leaderboardProps) {
 export async function getStaticProps() {
   const { data } = await LeaderboardApi.get('users', {
     params: {
-      _limit: 10,
+      _limit: 7,
       _sort: 'level',
       _order: 'desc',
     },
