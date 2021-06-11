@@ -85,7 +85,7 @@ export default function Leaderboard(props: leaderboardProps) {
 export async function getStaticProps() {
   const { data } = await LeaderboardApi.get('users', {
     params: {
-      _limit: 7,
+      _limit: 10,
       _sort: 'level',
       _order: 'desc',
     },

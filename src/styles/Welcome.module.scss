@@ -1,0 +1,93 @@
+.container {
+  background: var(--blue);
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  div:first-child {
+    img {
+      width: 80%;
+    }
+  }
+
+  div:last-child {
+    display: flex;
+    flex-direction: column;
+
+    header {
+      width: 22.5rem;
+      margin-bottom: 5rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      color: white;
+    }
+
+    figure {
+      display: flex;
+      color: var(--text-highlight);
+      width: 19.875rem;
+      font-size: 1.25rem;
+      padding: 2rem 0 2rem 0;
+
+      figcaption {
+        padding-left: 1rem;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: var(--text-highlight);
+      }
+
+      div {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        input {
+          width: 21.25rem;
+          height: 5rem;
+          background: transparent;
+          border: none;
+          background-image: linear-gradient(
+            to right,
+            #4953b8,
+            rgb(73, 83, 184, 0.2)
+          );
+          color: white;
+          border-radius: 10px 0 0 10px;
+          padding-left: 2rem;
+          outline: none;
+        }
+        input::placeholder { 
+          color: var(--text-highlight);
+        }
+        a {
+          border: none;
+          font-size: 0;
+          width: 5rem;
+          height: 5rem;
+          background: var(--blue-dark);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
